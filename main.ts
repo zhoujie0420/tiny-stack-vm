@@ -1,4 +1,5 @@
-// Tiny stack VM (ISA.md). T: per opcode, char-48 = imm*16+pops*4+pushes; ' ' = unknown.
+// Tiny stack VM implementation (make.fun ISA compliant).
+// T: per opcode, char-48 = imm*16+pops*4+pushes; ' ' = unknown.
 import{mkdirSync as m,readdirSync as r,readFileSync as f,writeFileSync as w}from'fs'
 let[,,I='/input',O='/output']=process.argv,T='0Aq46:;?        999999959995999 999             PTTP0           58              4414',
 R=(p,q,o)=>{let n=p.length,D=new Int32Array(257),C=[],M=new Int32Array(256),s=0,c=0,k=0,i=0,y,v,j,a,b,t
